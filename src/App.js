@@ -1,13 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Documentation from './Documentation';
 
 function App() {
+const welcomeMessage = "Welcome baby!"
+const goodbye = "Bye!"
+
   return (
     <div className="App">
       <header className="App-header">
+        <h1>{welcomeMessage}</h1>
+        <Documentation />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Playing around with this!
         </p>
         <a
           className="App-link"
@@ -17,6 +23,7 @@ function App() {
         >
           Learn React
         </a>
+        <p>{goodbye}</p>
       </header>
     </div>
   );
