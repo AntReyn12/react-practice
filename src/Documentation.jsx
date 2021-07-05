@@ -1,7 +1,10 @@
 import React from "react";
 
 const Documentation = () => (
-    <button>This is a button.</button>
+    <div>
+    <h2>Press button to see something cool!</h2>
+        <button>Button</button>
+    </div>
 );
 
 export default Documentation;
