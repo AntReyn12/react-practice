@@ -3,8 +3,8 @@ import './App.css';
 import Documentation from './Documentation';
 
 function App() {
-const welcomeMessage = "Welcome baby!"
-const goodbye = "Bye!"
+const welcomeMessage = "Welcome baby!";
+const goodbye = "Bye!";
 
   return (
     <div className="App">
