@@ -9,11 +9,11 @@ const friends = [
   },
   {
     name: "Andrew",
-    id: "234",
+    id: "223",
   },
   {
     name: "Chris",
-    id: "334",
+    id: "333",
   },
 ];
 
