@@ -1,32 +1,30 @@
 import React from "react";
 import "./App.css";
-import MappingPractice from "./Mapping";
+import SpreadPractice from "./Spread";
 
-const friends = [
+const anthonyFavoriteTeams = [
   {
-    name: "Ben",
-    id: "123",
+    league: "NFL",
+    name: "Eagles",
+    city: "Philadelphia",
   },
   {
-    name: "Andrew",
-    id: "223",
-  },
-  {
-    name: "Chris",
-    id: "333",
+    league: "MLB",
+    name: "Phillies",
+    city: "Philadelphia",
   },
 ];
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <header className="App-header">
-        {friends.map((friend) => (
-          <MappingPractice key={friend.id} name={friend.name} id={friend.id} />
-        ))}
+        {anthonyFavoriteTeams.map((team) => {
+          return <SpreadPractice {...team} />;
+        })}
       </header>
     </div>
   );
-}
+};
 
 export default App;
