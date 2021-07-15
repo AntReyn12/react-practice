@@ -1,5 +1,18 @@
 import React from "react";
 
+const anthonyFavoriteTeams = [
+  {
+    league: "NFL",
+    name: "Eagles",
+    city: "Philadelphia",
+  },
+  {
+    league: "MLB",
+    name: "Phillies",
+    city: "Philadelphia",
+  },
+];
+
 const SpreadPractice = (props) => {
   const {league, name, city} = props;
   return (
