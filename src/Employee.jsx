@@ -26,9 +26,11 @@ const employeeInfo = [
 const Employee = (props) => {
   const {firstName, lastName, age} = props;
   return (
-    <h4>
-      Employee Name: {firstName} {lastName}. {age} years old.
-    </h4>
+    <div>
+      <h4>
+        Employee Name: {firstName} {lastName}. {age} years old.
+      </h4>
+    </div>
   );
 };
 
