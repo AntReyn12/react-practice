@@ -2,35 +2,14 @@ import React from "react";
 import "./App.css";
 import Employee from "./Employee";
 
-const employeeInfo = [
-  {
-    firstName: "John",
-    lastName: "Smith",
-    age: "24",
-  },
-  {
-    firstName: "Kevin",
-    lastName: "Hart",
-    age: "19",
-  },
-  {
-    firstName: "Anthony",
-    lastName: "Reynolds",
-    age: "25",
-  },
-  {
-    firstName: "Nick",
-    lastName: "Nickerboxer",
-    age: "26",
-  },
-];
+const employeeInfo = ["Anthony", "Nick", "Rob"];
 
 const App = () => {
   return (
     <div>
-      <h1>Company Directory</h1>
+      <h1>Hello</h1>
       {employeeInfo.map((employee) => {
-        return <Employee {...employee} />;
+        return <h2>{employee}</h2>;
       })}
     </div>
   );
