@@ -1,7 +1,12 @@
 import React, {useState} from "react";
 
 const Counter = () => {
-  const [count, setCount] = useState(0);
+  const initialCount = 0;
+  const [count, setCount] = useState(initialCount);
+
+  const handleReset = () => {
+    setCount(initialCount);
+  };
 
   const handleIncrease = () => {
     setCount(count + 2);
@@ -14,8 +19,17 @@ const Counter = () => {
   return (
     <div>
       <p>The current count is: {count}</p>
-      <button onClick={handleIncrease}>Increase by 2</button>
-      <button onClick={handleDecrease}>Decrease by 2</button>
+      <div style={{display: "flex"}}>
+        <button className="button" onClick={handleReset}>
+          Reset Count
+        </button>
+        <button className="button" onClick={handleIncrease}>
+          Increase by 2
+        </button>
+        <button className="button" onClick={handleDecrease}>
+          Decrease by 2
+        </button>
+      </div>
     </div>
   );
 };
